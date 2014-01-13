@@ -40,4 +40,5 @@ $ less ~/.billable/anonymous_timesheet
 ## License
 
 MIT License
+
 &copy; 2014 [Mike McNeil](http://michaelmcneil.com), [Balderdash](http://balderdash.co) & [contributors](https://github.com/balderdashy/billable/graphs/contributors)
