@@ -10,18 +10,24 @@ Tracks billable hours.
 $ npm install -g billable
 ```
 
-### Start Clock
+### Usage
 
-```bash
-$ billable start
+```sh
+$ billable --help
+
+  Usage: billable [options] [command]
+
+  Commands:
+
+    start                  Start tracking time.
+    stop                   Stop tracking time.
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
 ```
 
-
-### Stop Clock
-
-```bash
-$ billable stop
-```
 
 
 ### Get That Sexy Timesheet
