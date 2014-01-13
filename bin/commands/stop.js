@@ -63,7 +63,6 @@ module.exports = function start (opts) {
 					var duration = moment.duration(
 						timestamp - moment(mostRecent.start)
 					);
-					// var numHours = truncate(duration.asHours(), 200) + ' hours';
 
 					report.write('========================================================='.red);
 					report.write('Stopped the clock.');
@@ -80,20 +79,3 @@ module.exports = function start (opts) {
 
 };
 
-
-
-
-/**
- * Truncate decimal places.
- *
- * @param  {[type]} number [description]
- * @param  {[type]} digits [description]
- * @return {[type]}        [description]
- */
-function truncate (number, digits) {
-	var multiplier = Math.pow(10, digits),
-		adjustedNum = number * multiplier,
-		truncatedNum = Math[adjustedNum < 0 ? 'ceil' : 'floor'](adjustedNum);
-
-	return truncatedNum / multiplier;
-}
