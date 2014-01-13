@@ -1,5 +1,7 @@
-billable
+billable  [![NPM version](https://badge.fury.io/js/billable.png)](http://badge.fury.io/js/billable)
 ========
+
+
 
 Track billable hours.
 
