@@ -4,7 +4,7 @@
   "description": "Track billable hours.",
   "main": "index.js",
   "bin": {
-    "billable": "bin"
+    "billable": "bin/index.js"
   },
   "scripts": {
     "test": "mocha"
