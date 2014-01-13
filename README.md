@@ -24,10 +24,10 @@ $ billable stop
 ```
 
 
-### Get Log
+### Get That Sexy Timesheet
 
 ```sh
-$ less ./billable/anonymous_timesheet
+$ less ~/.billable/anonymous_timesheet
 ```
 
 
