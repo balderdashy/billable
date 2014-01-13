@@ -30,17 +30,17 @@ module.exports = function start (opts) {
 		// Validate the timelog
 		var isValid = (timelog && _.isArray(timelog));
 		var mostRecent = _.last(timelog);
-		var isLastEntryValid = isValid && (_.isObject(mostRecent) && mostRecent.start);
+		var isLastEntryValid = isValid && (0===timelog.length || _.isObject(mostRecent) && mostRecent.start);
 		isValid = isValid && isLastEntryValid;
 		if ( !isValid ) {
 			report.log.error('Oh no.. A timefile is corrupted at `'+timefile+'`.');
 			report.log.error('Please repair manually (or at least back it up) before proceeding.');
-			return report.error('TIMEFILE_CORRUPTED');
+			return report.error('Contents: ', timelog);
 		}
 
 		// If most recent entry already has a `stop`, prevent the user
 		// from going any further until they run `billable start` again.
-		if ( mostRecent.stop ) {
+		if ( !mostRecent || mostRecent.stop ) {
 			report.log.warn('You aren\'t currently tracking time.');
 			report.log.warn('Run '+'billable start'.bold.white+' to start the clock.');
 			return report.end();
