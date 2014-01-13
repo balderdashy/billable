@@ -9,10 +9,8 @@ var _ = require('lodash')
 
 	, DEFAULT_OPTS = {
 		files: {
-			prefixes: {
-				started: 'started_at_',
-				stopped: 'stopped_at_'
-			},
+			prefix: '',
+			suffix: '_timesheet',
 			outputDir: '.billable'
 		}
 	};
