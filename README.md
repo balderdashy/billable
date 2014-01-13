@@ -1,16 +1,16 @@
 billable
 ========
 
-Tracks billable hours.
+Track billable hours.
 
 
-### Installation
+## Installation
 
 ```sh
 $ npm install -g billable
 ```
 
-### Usage
+## Usage
 
 ```sh
 $ billable --help
@@ -30,7 +30,7 @@ $ billable --help
 
 
 
-### Get That Sexy Timesheet
+## Get That Sexy Timesheet
 
 ```sh
 $ less ~/.billable/anonymous_timesheet
@@ -40,4 +40,4 @@ $ less ~/.billable/anonymous_timesheet
 ## License
 
 MIT License
-&copy; 2014 Mike McNeil, Balderdash & contributors
+&copy; 2014 [Mike McNeil](http://michaelmcneil.com), [Balderdash](http://balderdash.co) & [contributors](https://github.com/balderdashy/billable/graphs/contributors)
